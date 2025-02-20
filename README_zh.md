@@ -1,9 +1,12 @@
 netty-websocket-spring-boot-starter [![License](http://img.shields.io/:license-apache-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 ===================================
 
-### 代码完全从https://github.com/YeautyYE/netty-websocket-spring-boot-starter移植，在此基础上改造升级支持Springboot3.0+，方便大家使用，引入Maven依赖做了一丢丢修改，使用方式上无任何变化。
+### The code is completely transplanted from https://github.com/YeautyYE/netty-websocket-spring-boot-starter, and it is upgraded to support Springboot3.0+ on this basis, which is convenient for everyone to use.
+1. The Maven dependency was introduced and a few changes were made, groupId and artifactId were modified, and the version number was upgraded
+2. Create a new META-INF.spring directory in the resources directory of the introduced dependent project, and copy [org.springframework.boot.autoconfigure.AutoConfiguration.imports](files%2Forg.springframework.boot.autoconfigure.AutoConfiguration.imports) into it. There is no change in the way the api is used.
+3. As shown in the figure![img.png](images%2Fimg.png)
 
-
+At present, I don’t know why the second step file is needed. If you know how to do it, please raise an issue. Thank you!
 
 [English Docs](https://github.com/YeautyYE/netty-websocket-spring-boot-starter/blob/master/README.md)
 
